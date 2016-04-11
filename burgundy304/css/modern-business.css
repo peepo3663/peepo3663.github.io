@@ -33,6 +33,10 @@ h1.page-header {
     opacity: 0.8;
 }
 
+.img-rounded {
+  border-radius: 30px;
+}
+
 /* Home Page Carousel */
 
 header.carousel {
