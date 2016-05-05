@@ -1,0 +1,604 @@
+body{
+	font-family: Arial, Tahoma, Verdana;
+	font-size:0.75em;
+	color:#bfa2a2;
+	background:#190000;
+	padding:0px;
+	margin:0px;
+	
+}
+img{
+	border:0px;
+}
+#wrapper{
+	width:100%;
+	margin:0px;
+}
+#inner{
+	background-image:url(../image/lead_1.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	font-size:0px;
+	margin:0px auto;
+	width:1042px;
+	height:493px;
+}
+div.cufon{
+	color:#d29d60;
+	font-size:20px;
+}
+.text{
+	line-height:18px;
+}
+#header{
+	width:100%;
+	position:relative;
+	background:#150000;
+	height:490px;
+}
+#header_default{
+	width:100%;
+	position:relative;
+	background:#150000;
+	height:380px;
+}
+.lead{
+	width:100%;
+	height:493px;
+	position:absolute;
+	left:0px;
+	text-indent:-999px;
+	font-size:10%; /* ensure IE behaves */
+
+}
+.lead_inner{
+	width:100%;
+	height:365px;
+	position:absolute;
+	left:0px;
+	text-indent:-999px;
+	font-size:10%; /* ensure IE behaves */
+
+}
+#top{
+	width:100%;
+	margin:0px auto;
+	position:absolute;
+	z-index:10;
+}
+#logo{
+	padding-top:10px;
+	float:left;
+}
+#nav{
+	padding-top:35px;
+	float:right;
+}
+#top_wrapper{
+	width:960px; 
+	padding:0px 10px 0px 10px;
+	margin:0px auto;
+}
+#footer{
+	padding-top:10px;
+	width:100%;
+	background:url(../image/footer_bg.gif) #190000 repeat-x;
+	height:64px;
+}
+#footer_wrapper{
+	width:960px;
+	padding:0px 10px 0px 10px;
+	margin:0px auto;
+	font-size:11px;
+	color:#996666;
+}
+.clear{
+	clear:both;
+	margin:0px;
+	padding:0px;
+	height:0xp;
+	width:0px;
+}
+#footer_left{
+	float:left;
+}
+#footer_right{
+	float:right;
+	text-align:right;
+	
+}
+#footer_right a{
+	color:#994444;
+	text-decoration:underline;
+}
+#footer_right a:hover{
+	text-decoration:none;
+}
+.title{
+	font-weight:bold;
+	color:#aa7a42;
+}
+/* ======================= navigation =================================*/
+
+#menu{
+	list-style:none;
+	height:44px;
+	padding:0px;
+	margin:0px;
+}
+#menu li{	
+	display:inline;
+	float:left;
+}
+#menu li a{
+    height:44px;
+	text-indent:-9999px;
+	float:left;
+	background-repeat:no-repeat;
+	font-size:10%; /* ensure IE behaves */
+	overflow:hidden;
+	display:block;
+	background-image:url(../image/nav_bg.png);
+}
+#home a{
+	width:99px;
+
+	background-position:0px 0px;
+}
+#home a:hover,#home a.selected{
+	width:99px;
+	background-position:0px -44px;
+}
+#about a{
+	width:114px;
+	background-position:-99px 0px;
+}
+#about a:hover,#about a.selected{
+	width:114px;
+	background-position:-99px -44px;
+}
+#facilities a{
+	width:113px;
+	background-position:-213px 0px;
+}
+#facilities a:hover,#facilities a.selected{
+	width:113px;
+	background-position:-213px -44px;
+}
+#room a{
+	width:92px;
+	background-position:-326px 0px;
+}
+#room a:hover,#room a.selected{
+	width:92px;
+	background-position:-326px -44px;
+}
+#reservation a{
+	width:135px;
+	background-position:-418px 0px;
+}
+#reservation a:hover,#reservation a.selected{
+	width:135px;
+	background-position:-418px -44px;
+}
+#gallery a{
+	width:100px;
+	background-position:-553px 0px;
+}
+#gallery a:hover,#gallery a.selected{
+	width:100px;
+	background-position:-553px -44px;
+}
+#contact a{
+	width:131px;
+	background-position:-653px 0px;
+}
+#contact a:hover,#contact a.selected{
+	width:131px;
+	background-position:-653px -44px;
+}
+
+
+
+/* ======================== home ====================== */
+#lead1{
+	background-image:url(../image/lead_1.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;	
+	z-index:10;
+}
+#lead2{
+	background-image:url(../image/lead_2.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;	
+	z-index:9;
+}
+#lead3{
+	background-image:url(../image/lead_8.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;	
+	z-index:8;
+}
+#lead4{
+	background-image:url(../image/lead_7.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;	
+	z-index:7;
+}
+#lead_inner1{
+	background-image:url(../image/lead_inner1.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;	
+	z-index:10;
+}
+#lead_inner2{
+	background-image:url(../image/lead_inner3.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;	
+	z-index:9;
+}
+#lead_inner3{
+	background-image:url(../image/lead_inner2.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;	
+	z-index:8;
+}
+#lead_inner4{
+	background-image:url(../image/lead_inner4.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;	
+	z-index:7;
+}
+#content{
+	width:100%;
+	background:url(../image/body_bg.gif) top repeat-x ;
+}
+#content_wrapper{
+	margin:0px auto;
+	width:960px;
+	padding:0px 10px 30px 10px;
+	position:relative;
+}
+#curve{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	z-index:10;
+	width:100%;
+	background:url(../image/curve_bg.png) center top no-repeat;
+	height:100px;
+	text-indent:-999px;
+	font-size:10%; /* ensure IE behaves */
+}
+#home_left_column{
+	float:left;
+	width:280px;
+	padding-right:25px;
+	margin-right:25px;
+	background:url(../image/verticle_bg.png) no-repeat;
+	background-position:right -5px;
+}
+#home_middle_column{
+	float:left;
+	width:330px;
+	padding-right:25px;
+	margin-right:25px;
+	background:url(../image/verticle_bg.png) no-repeat;
+	background-position:right -5px;
+}
+#home_right_column{
+	float:left;
+}
+.inner_content{
+	padding-top:7px;
+}
+#home_gallery{
+	background:url(../image/home_gallery_bg.png) no-repeat;
+	width:246px;
+	height:162px;
+	margin-left:-5px;
+}
+.room_type{
+	width:246px;
+	height:162px;
+}
+.room_thumb{
+	float:left;
+	padding-bottom:16px;
+	width:96px;
+}
+.room_thumb img{
+	border:1px solid #470a0a;
+}
+.room_detail{
+	float:left;
+	padding-left:20px;
+	width:210px;
+}
+#home_gallery_container{
+	padding-left:9px;
+	padding-top:9px;
+	width:216px;
+	height:144px;
+
+}
+#home_gallery_container div#container{
+	width:216px;
+	height:144px;
+	overflow:hidden;
+	position:relative;
+}
+#clip{
+	width:1000px;
+	height:144px;
+}
+.item{
+	float:left;
+	width:216px;
+	height:144px;
+}
+#lead_text_1{
+	position:absolute;
+	z-index:50;
+	right:220px;
+	top:-170px;
+}
+#lead_text_2{
+	position:absolute;
+	z-index:50;
+	right:20px;
+	top:-120px;
+}
+.lead_text_inner{
+	position:absolute;
+	z-index:50;
+	right:50px;
+	top:-120px;
+}
+#gallery_page{
+	position:absolute;
+	right:43px;
+	top:40px;
+	z-index:950;
+}
+/* ================= Contact Us ========================*/
+#left_column{
+	float:left;
+	width:600px;
+	padding-right:25px;
+	margin-right:25px;
+	background:url(../image/bg_line_column_long.png) no-repeat;
+	background-position:right -5px;
+}
+#left_column_short{
+	float:left;
+	width:600px;
+	padding-right:25px;
+	margin-right:25px;
+	background:url(../image/bg_line_column.png) no-repeat;
+	background-position:right -5px;
+}
+#right_column{
+	float:left;
+	width:300px;
+	
+}
+#contact_form{
+	padding-top:10px;
+}
+.label_form{
+	color:#FFFFFF;
+	margin-bottom:5px;
+	padding-top:15px;
+}
+.star{
+	color:#bd1d1d;
+}
+.text_input{
+	color:#bfa2a2;
+	width:450px;
+	height:20px;
+	border:1px solid #460707;
+	background:url(../image/input_bg.gif) repeat-x #2d0101;
+	padding-top:5px;
+	font-family: Arial, Tahoma, Verdana;
+	font-size:12px;
+}
+.textarea_form{
+	color:#bfa2a2;
+	width:450px;
+	height:117px;
+	border:1px solid #460707;
+	background:url(../image/textarea_bg.gif) repeat-x #2d0101;
+	font-family: Arial, Tahoma, Verdana;
+	font-size:12px;
+}
+#map{
+	padding-top:10px;
+	margin-left:-2px;
+}
+#contact_submit{
+	padding-top:10px;
+	margin-left:-2px;
+}
+.error{
+	color:#FF0000;
+	font-size:11px;
+	padding-left:20px;
+	display:none;
+}
+select.form{
+	color:#bfa2a2;
+	width:450px;
+	height:25px;
+	border:1px solid #460707;
+	background:#2d0101;
+	font-family: Arial, Tahoma, Verdana;
+	font-size:12px;
+}
+/* ========================== About us =================================================== */
+div.about_room{
+	padding-top:20px;
+}
+div.about_room div.thumb{
+
+	margin-right:20px;
+	float:left;
+}
+div.about_room div.thumb img{
+	border:1px solid #470505;
+
+}
+
+div.about_room div.detail{
+	width:380px;
+	float:left;
+}
+
+/*============================= facilities =====================================*/
+.room_type{
+	width:300px;
+	height:110px;
+}
+.room_type .thumb{
+	width:130px;
+	float:left;
+}
+.room_type .detail{
+	width:150px;
+	float:left;
+	padding-left:15px;
+}
+.room_type .detail a, div.room_detail a{
+	color:#aa7a42;
+	font-weight:bold;
+	text-decoration:none;
+}
+.room_type .detail a:hover, div.room_detail a:hover{
+	color:#aa7a42;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.room_type .thumb img{
+	border:1px solid #470505;
+	width:130px;
+}
+.text_head{
+	color:#aa7a42;
+	font-weight:bold;
+}
+
+.facilities_list{
+	width:580px;
+	padding-top:20px;
+}
+.facilities_list .thumb{
+	width:130px;
+	float:left;
+}
+.facilities_list .detail{
+	width:350px;
+	float:left;
+	padding-left:15px;
+}
+.facilities_list .thumb img{
+	border:1px solid #470505;
+	width:130px;
+}
+/* =================== Gallery ===========================*/
+.thumb_gallery{
+	width:110px;
+	height:70px;
+	overflow:hidden;
+	border:1px solid #470505;
+	float:left;
+	margin-bottom:10px;
+}
+.thumb_gallery img{
+	height:75px;
+	width:110px;
+}
+/*===================== Room ==================================*/
+#room_left_column{
+	float:left;
+	width:665px;
+	padding-right:25px;
+	margin-right:25px;
+	background:url(../image/bg_line_column_long.png) no-repeat;
+	background-position:right -5px;
+}
+#room_right_column{
+	float:left;
+	width:240px;
+}
+.room_type_list{
+	margin-left:-3px;
+	width:666px;
+}
+.room_body{
+	padding-left:17px;
+	padding-top:6px;
+	width:666px;
+	background:url(../image/room_bg_middle.png) no-repeat;
+	position:relative;
+}
+.room_reserve{
+
+	position:absolute;
+	bottom:10px;
+	right:30px;
+	width:200px;
+	text-align:right;
+	font-size:18px;
+
+	color:#aa7a42;
+	font-style:italic;
+}
+.room_img{
+	width:260px;
+	height:174px;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.room_img img{
+	width:260px;
+	height:174px;
+	border:1px solid #470505;
+}
+.room_type_detail{	
+	float:left;
+	padding-left:17px;
+	width:370px;
+	line-height:18px;
+	min-height:185px;
+}
+.room_type_title{	
+	font-size:14px;
+	color:#aa7a42;
+	font-weight:bold;
+}
+.room_spec{
+	width:100px;
+	float:left;
+	font-weight:bold;
+}
+.room_top{
+	margin-top:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

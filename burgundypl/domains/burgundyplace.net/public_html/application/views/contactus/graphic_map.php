@@ -1,0 +1,1 @@
+<img src="<?=base_url()?>resource/image/graphic_map.gif" />
