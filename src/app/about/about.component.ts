@@ -14,8 +14,8 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.title = 'Wasupol Tungsakutlong'
-    this.subtitle = 'I am a little boy who has a passion for technology and a little Full-stack developer. (Mobile, Backend, Frontend Developer).'
+    this.title = 'Wasupol Tungsakultong'
+    this.subtitle = 'I have a passion for technology and a Full-stack developer. (Mobile, Backend, Frontend Developer).'
   }
 
 }
