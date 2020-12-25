@@ -3,12 +3,13 @@
         <h3>{{title}}</h3>
         <p>{{subtitle}}</p>
         <div class="features" *ngIf="accomplishments != null || accomplishments.length > 0">
-            <article *ngFor="let accomplishment of accomplishments">
-                <a class="image"><img src="{{accomplishment.imageURL}}" alt="{{accomplishment.name}}" /></a>
+            <article *ngFor="let accomplishment of accomplishments; let i = index" [attr.data-index]="i">
+                <a class="image" *ngIf="i % 2 == 0"><img src="{{accomplishment.imageURL}}" alt="{{accomplishment.name}}" /></a>
                 <div class="inner">
                     <h4>{{accomplishment.name}}</h4>
                     <p [innerHTML]="accomplishment.description"></p>
                 </div>
+                <a class="image" *ngIf="i % 2 == 1"><img src="{{accomplishment.imageURL}}" alt="{{accomplishment.name}}" /></a>
             </article>
         </div>
     </div>
