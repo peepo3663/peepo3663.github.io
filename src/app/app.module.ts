@@ -11,6 +11,8 @@ import { ThingCanDoComponent } from './thing-can-do/thing-can-do.component';
 import { AccomplishmentsComponent } from './accomplishments/accomplishments.component';
 import { ContactComponent } from './contact/contact.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import {ContactService} from "./contact.service";
 
 @NgModule({
   declarations: [
@@ -25,10 +27,13 @@ import {ReactiveFormsModule} from "@angular/forms";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+      ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
