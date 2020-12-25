@@ -22,8 +22,10 @@ export class AccomplishmentsComponent implements OnInit {
     private addProject() {
         this.accomplishments.push({
             name: 'Inner circle Project (Backend and Android Application)',
-            description: 'This project is a native Android Chat Application for course <b>CS673 at Boston University</b>. <br /> I implemented this with a native Android Application framework, and Spring Boot Java as a Backend System. Moreover, It is a chat application so to have real-time messaging. I used <b>Firebase Firestore</b> to achieve this feature.',
+            description: 'This project is a native Android Chat Application for course <b>CS673 at Boston University</b>. <br /> I implemented this with a native <b>Android Application framework</b>, and <b>Spring Boot Java</b> as a Backend System. Moreover, It is a chat application so to have real-time messaging. I used <b>Firebase Firestore</b> to achieve this feature.',
             imageURL: 'https://firebasestorage.googleapis.com/v0/b/wasupol-s-website.appspot.com/o/inner-circle%2FScreenshot_1607546781.png?alt=media&token=d2e65e30-0268-4bdd-81f0-696b7aad048a'
+        }, {
+            name: ''
         })
     }
 
