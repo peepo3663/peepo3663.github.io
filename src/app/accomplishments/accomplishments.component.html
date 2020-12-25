@@ -4,10 +4,10 @@
         <p>{{subtitle}}</p>
         <div class="features" *ngIf="accomplishments != null || accomplishments.length > 0">
             <article *ngFor="let accomplishment of accomplishments">
-                <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                <a class="image"><img src="{{accomplishment.imageURL}}" alt="{{accomplishment.name}}" /></a>
                 <div class="inner">
-                    <h4>Possibly broke spacetime</h4>
-                    <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+                    <h4>{{accomplishment.name}}</h4>
+                    <p [innerHTML]="accomplishment.description"></p>
                 </div>
             </article>
         </div>
