@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'peepo3663Website';
+  title = 'Wasupol Tungsakultong, Full-stack, Mobile Developer and Software Engineer';
 }
