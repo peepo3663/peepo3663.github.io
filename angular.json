@@ -28,9 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/stylesheets/skel.css",
-              "src/stylesheets/style.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -94,9 +92,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/stylesheets/skel.css",
-              "src/stylesheets/style.css"
+              "src/styles.css"
             ],
             "scripts": []
           }

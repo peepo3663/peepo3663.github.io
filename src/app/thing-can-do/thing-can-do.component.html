@@ -1,0 +1,16 @@
+<!-- Two -->
+<section id="two">
+    <div class="container">
+        <h3>{{title}}</h3>
+        <p>{{subtitle}}</p>
+        <ul class="feature-icons" *ngIf="thingsICanDo != null">
+<!--            <li class="fa-code">Can write various the code</li>-->
+<!--            <li class="fa-cubes">Stack small boxes</li>-->
+<!--            <li class="fa-book">Read books and stuff</li>-->
+<!--            <li class="fa-coffee">Drink much coffee</li>-->
+<!--            <li class="fa-bolt">Lightning bolt</li>-->
+<!--            <li class="fa-users">Shadow clone technique</li>-->
+            <li *ngFor="let thing of thingsICanDo" class="{{thing.icon}}" [innerHTML]="thing.data"></li>
+        </ul>
+    </div>
+</section>

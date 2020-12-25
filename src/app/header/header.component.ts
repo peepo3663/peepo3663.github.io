@@ -17,6 +17,12 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.myName = "Wasupol Tungsakultong"
+    this.myDesc = "I love technologies, programming, in addition, I know various of programming languages like JAVA, C#, Python, Ruby, Kotlin, Objective-C, Swift, and JavaScript"
+    this.myFacebook = "https://www.facebook.com/PiPo.Wasupol"
+    this.myInstagram = "https://www.instagram.com/peepo3663"
+    this.myGithub = "https://github.com/peepo3663"
+    this.myEmail = "peepo157@gmail.com"
   }
 
 }
