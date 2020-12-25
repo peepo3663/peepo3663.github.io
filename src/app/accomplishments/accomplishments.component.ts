@@ -36,6 +36,10 @@ export class AccomplishmentsComponent implements OnInit {
             name: 'TEEZY (iOS Application)',
             description: 'TEEZY application is the customized t-shirt design and make it real. It is developed with <b>iOS Swift</b> with <b>Shopify</b> sdk.<br /> Here is the <a href="http://www.ninefar.com/?p=20430">article</a> about the application.',
             imageURL: 'https://firebasestorage.googleapis.com/v0/b/wasupol-s-website.appspot.com/o/tezzy%2F750x750bb.jpeg?alt=media&token=b0b8dc10-2821-4245-bcfe-7925ca1433c9'
+        }, {
+            name: 'Triam 40 (E-book Android/iOS Application)',
+            description: 'Triam 40 is the application for E-book of Triamudom\'s 40th year book. It featured QR code and media player with <b>iOS Swift</b>',
+            imageURL: 'https://firebasestorage.googleapis.com/v0/b/wasupol-s-website.appspot.com/o/triam40%2Ftriam40-ebook.jpeg?alt=media&token=28ebe066-d09e-44d4-b0fd-471ae134c6f9'
         })
     }
 
