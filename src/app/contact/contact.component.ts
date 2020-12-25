@@ -29,6 +29,6 @@ export class ContactComponent implements OnInit {
 
   onSubmitContactMe() {
     // send email to me
-    
+
   }
 }
