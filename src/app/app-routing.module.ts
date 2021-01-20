@@ -9,7 +9,7 @@ import {SkillsetComponent} from "./skillset/skillset.component"
 
 const routes: Routes = [
   {path: '', component: MainComponent, data: { animation: 'HomePage' }},
-  {path: 'my-resume', component: AboutComponent, data: { animation: 'MyResume' }},
+  {path: 'who-am-i', component: AboutComponent, data: { animation: 'MyResume' }},
   {path: 'my-experience', component: ExperienceComponent},
   {path: 'my-skills', component: SkillsetComponent},
   {path: 'portfolio', component: AccomplishmentsComponent},
