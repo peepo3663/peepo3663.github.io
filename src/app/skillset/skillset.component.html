@@ -1,0 +1,50 @@
+<app-header>
+    <div class="container">
+        <section class="skills-sec sec-pad-top-sm" id="skills_sec">
+            <div class="row">
+                <div class="col-sm-12 mb-30">
+                    <h2 class="mb-30">Programming skills</h2>
+                    <div class="mdl-card mdl-shadow--2dp">
+                        <canvas mdbChart
+                                chartType="bar"
+                                [datasets]="chartDatasets"
+                                [labels]="chartLabels"
+                                [colors]="chartColors"
+                                [options]="chartOptions"
+                                [legend]="true">
+                        </canvas>
+                    </div>
+                </div>
+                <div class="col-sm-12 mb-30">
+                    <h2 class="mb-30">Web technologies and tools skills</h2>
+                    <div class="mdl-card mdl-shadow--2dp">
+                        <span class="mdl-chip mr-10 mb-10 mdl-color--red-100" *ngFor="let skill of webToolsLabels">
+                            <span class="mdl-chip__text">{{skill}}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-12 mb-30">
+                    <h2 class="mb-30">Soft Skills</h2>
+                    <div class="mdl-card mdl-shadow--2dp">
+                        <span class="mdl-chip mr-10 mb-10 mdl-color--green-500" *ngFor="let skill of softSkills">
+                            <span class="mdl-chip__text font-white">{{skill}}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-12 mb-30">
+                    <h2 class="mb-30">Language Skills</h2>
+                    <div class="mdl-card mdl-shadow--2dp">
+                        <canvas mdbChart
+                                chartType="radar"
+                                [datasets]="languageDataSets"
+                                [labels]="languageLabels"
+                                [colors]="chartLanguageColors"
+                                [options]="chartOptions"
+                                [legend]="true">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</app-header>
