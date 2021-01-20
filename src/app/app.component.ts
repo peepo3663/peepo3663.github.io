@@ -44,6 +44,8 @@ export class AppComponent {
 
   private playOpenSound() {
     let audio = new Audio('/assets/sounds/opening_sound.mp3')
+    audio.autoplay = true
+    audio.muted = true
     audio.play()
   }
 
