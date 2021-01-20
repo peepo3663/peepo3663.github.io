@@ -7,6 +7,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class WhatILoveComponent implements OnInit {
 
+  title = 'My activity and my dogs'
   poppyPupaeImages: Array<any>
   @Output() image: EventEmitter<string>
 
