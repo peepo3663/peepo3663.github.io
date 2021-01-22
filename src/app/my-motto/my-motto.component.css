@@ -1,0 +1,11 @@
+#my_motto_quote {
+    display: table;
+    margin: auto;
+    font-size: 30px;
+}
+
+@media (min-width: 768px) {
+    #my_motto_quote {
+        font-size: 50px;
+    }
+}

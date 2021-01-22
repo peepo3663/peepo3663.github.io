@@ -3,11 +3,9 @@
         <h2 class="pull-left float-none-xs">{{title}}</h2>
         <div class="clearfix"></div>
     </div>
-    <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phone" *ngFor="let poppyImage of poppyPupaeImages; let i = index" [attr.data-index]="i">
-            <div class="my-card-image mdl-card mdl-shadow--2dp" [ngStyle]="{background : 'url(' + poppyImage.image + ') center / cover'}" (click)="onImageClick(poppyImage.image, i)" id="my-image-{{i}}">
-                <div class="mdl-card__title mdl-card--expand"></div>
-            </div>
-        </div>
-    </div>
+    <mdb-carousel [animation]="'slide'" [interval]="4000">
+        <mdb-carousel-item *ngFor="let image of poppyPupaeImages">
+            <img class="d-block w-100" src="{{image.image}}" alt="wasupol_activity">
+        </mdb-carousel-item>
+    </mdb-carousel>
 </section>

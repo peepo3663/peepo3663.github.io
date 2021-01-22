@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
+
 import {
   Event,
   NavigationCancel,
@@ -25,7 +26,7 @@ export class AppComponent {
   constructor(private router: Router) {
     var timer = null
     this.loading = true
-    this.playOpenSound()
+    // this.playOpenSound()
     router.events.subscribe((event: Event) => {
       if (!(event instanceof NavigationStart)) {
         return;

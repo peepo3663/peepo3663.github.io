@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsetComponent implements OnInit {
 
   chartDatasets: Array<any> = [
-    { data: [100, 100, 100, 95, 90, 85, 80, 80, 75, 75, 30, 0], label: 'Programming Languages' },
+    { data: [10, 10, 10, 9.5, 9, 8.5, 8, 8, 7.5, 7.5, 3, 0], label: 'Programming Languages' },
   ];
 
   languageDataSets: Array<any> = [
@@ -52,7 +52,8 @@ export class SkillsetComponent implements OnInit {
   ]
 
   public chartOptions: any = {
-    responsive: true
+    responsive: true,
+    legend: {display: false}
   }
 
   constructor() { }
