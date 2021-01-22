@@ -19,10 +19,11 @@ import { EducationComponent } from './education/education.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 // For MDB Angular Free
-import {ChartsModule, IconsModule, NavbarModule, WavesModule} from 'angular-bootstrap-md';
+import {CarouselModule, ChartsModule, IconsModule, NavbarModule, WavesModule} from 'angular-bootstrap-md';
 import { WhatIDoInADayComponent } from './what-i-do-in-a-day/what-i-do-in-a-day.component';
 import { WhatILoveComponent } from './what-i-love/what-i-love.component'
 import {AngularImageViewerModule} from "angular-x-image-viewer";
+import { MyMottoComponent } from './my-motto/my-motto.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {AngularImageViewerModule} from "angular-x-image-viewer";
     SkillsetComponent,
     AboutMeComponent,
     WhatIDoInADayComponent,
-    WhatILoveComponent
+    WhatILoveComponent,
+    MyMottoComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,8 @@ import {AngularImageViewerModule} from "angular-x-image-viewer";
     WavesModule,
     NavbarModule,
     IconsModule,
-    AngularImageViewerModule
+    AngularImageViewerModule,
+    CarouselModule
   ],
   providers: [
       ContactService
