@@ -1,0 +1,17 @@
+.contact_info {
+    font-family: 'Roboto', sans-serif;
+    color: #1f1f1f;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+i {
+    margin-right: 20px;
+}
+
+.mdl-textfield {
+    width: 100%;
+}

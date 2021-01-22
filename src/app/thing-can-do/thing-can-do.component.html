@@ -1,16 +1,52 @@
 <!-- Two -->
-<section id="two">
-    <div class="container">
-        <h3>{{title}}</h3>
-        <p>{{subtitle}}</p>
-        <ul class="feature-icons" *ngIf="thingsICanDo != null">
-<!--            <li class="fa-code">Can write various the code</li>-->
-<!--            <li class="fa-cubes">Stack small boxes</li>-->
-<!--            <li class="fa-book">Read books and stuff</li>-->
-<!--            <li class="fa-coffee">Drink much coffee</li>-->
-<!--            <li class="fa-bolt">Lightning bolt</li>-->
-<!--            <li class="fa-users">Shadow clone technique</li>-->
-            <li *ngFor="let thing of thingsICanDo" class="{{thing.icon}}" [innerHTML]="thing.data"></li>
-        </ul>
+<!--<section id="two">-->
+<!--    <div class="container">-->
+<!--        <h3>{{title}}</h3>-->
+<!--        <p>{{subtitle}}</p>-->
+<!--        <ul class="feature-icons" *ngIf="thingsICanDo != null">-->
+<!--&lt;!&ndash;            <li class="fa-code">Can write various the code</li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li class="fa-cubes">Stack small boxes</li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li class="fa-book">Read books and stuff</li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li class="fa-coffee">Drink much coffee</li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li class="fa-bolt">Lightning bolt</li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li class="fa-users">Shadow clone technique</li>&ndash;&gt;-->
+<!--            <li *ngFor="let thing of thingsICanDo" class="{{thing.icon}}" [innerHTML]="thing.data"></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</section>-->
+<section id="profile_sec" class="profile-sec sec-pad-top-sm">
+    <h2 class="mb-30">What I do</h2>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+            <div class="mdl-card mdl-shadow--2dp">
+                <i class="zmdi zmdi-format-color-fill font-blue profile-icon"></i>
+                <h4 class="mb-15">user interface</h4>
+                <p>A mobile first responsive template with material design.</p>
+
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+            <div class="mdl-card mdl-shadow--2dp">
+                <i class="zmdi zmdi-format-color-text font-green profile-icon"></i>
+                <h4 class="mb-15">branding</h4>
+                <p>Comes with light and dark options. Suitable for the universe.</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+            <div class="mdl-card mdl-shadow--2dp">
+                <i class="zmdi zmdi-comments font-yellow profile-icon"></i>
+                <h4 class="mb-15">communication</h4>
+                <p>Extra ordinary setting pannel with lots of awesome features.</p>
+
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+            <div class="mdl-card mdl-shadow--2dp">
+                <i class="zmdi zmdi-grain font-red profile-icon"></i>
+                <h4 class="mb-15">strategy</h4>
+                <p>Easy customizable framework using bootstrap sass.</p>
+
+            </div>
+        </div>
     </div>
 </section>

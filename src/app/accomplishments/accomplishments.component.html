@@ -1,16 +1,31 @@
-<section id="three">
-    <div class="container">
-        <h3>{{title}}</h3>
-        <p>{{subtitle}}</p>
-        <div class="features" *ngIf="accomplishments != null || accomplishments.length > 0">
-            <article *ngFor="let accomplishment of accomplishments; let i = index" [attr.data-index]="i">
-                <a class="image" *ngIf="i % 2 == 0 && accomplishment.imageURL != null"><img src="{{accomplishment.imageURL}}" alt="{{accomplishment.name}}" /></a>
-                <div class="inner">
-                    <h4>{{accomplishment.name}}</h4>
-                    <p [innerHTML]="accomplishment.description"></p>
-                </div>
-                <a class="image" *ngIf="i % 2 == 1 && accomplishment.imageURL != null"><img src="{{accomplishment.imageURL}}" alt="{{accomplishment.name}}" /></a>
-            </article>
+<app-header>
+<!--    <h3>{{title}}</h3>-->
+<!--    <p>{{subtitle}}</p>-->
+    <!--<div class="features" *ngIf="accomplishments != null || accomplishments.length > 0">-->
+    <!--    <article *ngFor="let accomplishment of accomplishments; let i = index" [attr.data-index]="i">-->
+    <!--        <a class="image" *ngIf="i % 2 == 0 && accomplishment.imageURL != null"><img src="{{accomplishment.imageURL}}" alt="{{accomplishment.name}}" /></a>-->
+    <!--        <div class="inner">-->
+    <!--            <h4>{{accomplishment.name}}</h4>-->
+    <!--            <p [innerHTML]="accomplishment.description"></p>-->
+    <!--        </div>-->
+    <!--        <a class="image" *ngIf="i % 2 == 1 && accomplishment.imageURL != null"><img src="{{accomplishment.imageURL}}" alt="{{accomplishment.name}}" /></a>-->
+    <!--    </article>-->
+    <!--</div>-->
+    <div class="mdl-grid portfolio-max-width">
+        <div *ngFor="let accomplishment of accomplishments" class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+            <div class="mdl-card__media">
+                <img alt="{{accomplishment.name}}" border="0" class="article-image" src="{{accomplishment.imageURL}}">
+            </div>
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">{{accomplishment.name}}</h2>
+            </div>
+            <div [innerHTML]="accomplishment.description" class="mdl-card__supporting-text">
+            </div>
+<!--            <div class="mdl-card__actions mdl-card&#45;&#45;border">-->
+<!--                <a class="mdl-button mdl-button&#45;&#45;colored mdl-js-button mdl-js-ripple-effect mdl-button&#45;&#45;accent"-->
+<!--                   data-upgraded=",MaterialButton,MaterialRipple" href="portfolio-example01.html">Read more<span-->
+<!--                        class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>-->
+<!--            </div>-->
         </div>
     </div>
-</section>
+</app-header>

@@ -1,0 +1,16 @@
+.mdl-layout__content {
+    background: #e2e2e2;
+    width: 100%;
+}
+
+.my_content {
+    background: #e2e2e2;
+}
+
+.page-content {
+    margin-top: 8px;
+}
+
+.logo-icon {
+    height: 30px;
+}

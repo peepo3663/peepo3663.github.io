@@ -1,0 +1,49 @@
+/*Skills Sec*/
+.skills-sec .progress-cat {
+    padding-bottom: 11px;
+    display: block;
+    font-size: 14px; }
+.skills-sec .progress-bar-graph .bar-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    background: #bababa; }
+.skills-sec .progress-bar-graph .bar-wrap strong {
+    font-size: 12px;
+    opacity: 0;
+    display: block;
+    float: left;
+    position: absolute;
+    right: 0px;
+    top: -27px; }
+.skills-sec .progress-bar-graph .bar-wrap.green-bar span {
+    background: #01c853; }
+.skills-sec .progress-bar-graph .bar-wrap.green-bar span:after {
+    background: #01c853; }
+.skills-sec .progress-bar-graph .bar-wrap.yellow-bar span {
+    background: #fec107; }
+.skills-sec .progress-bar-graph .bar-wrap.yellow-bar span:after {
+    background: #fec107; }
+.skills-sec .progress-bar-graph .bar-wrap.red-bar span {
+    background: #ff3d00; }
+.skills-sec .progress-bar-graph .bar-wrap.red-bar span:after {
+    background: #ff3d00; }
+.skills-sec .progress-bar-graph .bar-wrap.blue-bar span {
+    background: #2879ff; }
+.skills-sec .progress-bar-graph .bar-wrap.blue-bar span:after {
+    background: #2879ff; }
+.skills-sec .progress-bar-graph span {
+    height: 2px;
+    width: 0px;
+    display: block;
+    float: left;
+    position: relative;
+    overflow: visible !important; }
+.skills-sec .progress-bar-graph span:after {
+    border-radius: 50%;
+    content: "";
+    height: 13px;
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    width: 13px; }

@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  myFacebook = "https://www.facebook.com/PiPo.Wasupol"
+  myInstagram = "https://www.instagram.com/peepo3663"
+  myGithub = "https://github.com/peepo3663"
+  myEmail = "peepo157@gmail.com"
+
   constructor() { }
 
   ngOnInit(): void {

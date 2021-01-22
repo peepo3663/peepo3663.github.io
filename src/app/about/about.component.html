@@ -1,10 +1,19 @@
-<section id="one">
+<angular-image-viewer (customImageEvent)="handleExit($event)" *ngIf="imageClick != null" [config]="{customBtns:[{name: 'exit', icon: 'fa fa-times'}], btnShow: {
+        zoomIn: false,
+        zoomOut: false,
+        rotateClockwise: false,
+        rotateCounterClockwise: false,
+        next: false,
+        prev: false
+    }, allowFullscreen: false}" [screenHeightOccupied]="0" [src]="[imageClick]"></angular-image-viewer>
+<app-header *ngIf="imageClick == null">
+    <div class="bg-struct bg-img"></div>
     <div class="container">
-        <header class="major">
-            <h1 hidden>{{title}}</h1>
-            <h2>{{title}}</h2>
-            <p>{{subtitle}}</p>
-        </header>
-        <p>{{description}}</p>
+        <app-about-me [title]="title" address="{{address}}" age="{{age}}"
+                      email="{{email}}" facebookLink="{{facebookLink}}" githubLink="{{github}}"
+                      instagramLink="{{instagram}}"
+                      linkedinLink="{{linkedin}}" phone="{{phone}}" subtitle="{{subtitle}}"></app-about-me>
+        <app-what-i-do-in-a-day></app-what-i-do-in-a-day>
+        <app-what-i-love (image)="onGalleryImageClick($event)"></app-what-i-love>
     </div>
-</section>
+</app-header>

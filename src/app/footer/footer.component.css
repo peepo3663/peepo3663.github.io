@@ -1,0 +1,54 @@
+.no-bottom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: white;
+}
+
+.footer-facebook {
+    background-color: #3b5998;
+    line-height: 34px;
+}
+
+.footer-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+}
+
+.footer-instagram {
+    background-color: #5851DB;
+    line-height: 34px;
+}
+
+.footer-github {
+    line-height: 34px;
+    background-color: #333;
+}
+
+.footer-email {
+    line-height: 34px;
+    background-color: #489EC5;
+}
+
+.footer-socials {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.decoration {
+    height: 1px;
+    background-color: rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    display: block;
+    clear: both;
+}
+
+

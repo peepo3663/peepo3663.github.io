@@ -8,8 +8,12 @@ import {ContactService} from "../contact.service";
     styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-    title = 'Contact Me'
-    subtitle = ''
+    title = 'Send an email'
+    subtitle = 'Contact Information'
+    address = '<strong>Address</strong><br/>262 Harvard St Apt 11, Cambridge, MA 02139'
+    phone = '+18579191438'
+    email = 'peepo157@gmail.com'
+    github = 'peepo3663'
     contactMeForm: FormGroup
 
     constructor(private contactService: ContactService) {

@@ -1,26 +1,81 @@
-<section id="four">
+<app-header>
     <div class="container">
-        <h3>{{title}}</h3>
-        <p>{{subtitle}}</p>
-        <form [formGroup]="contactMeForm" (ngSubmit)="onSubmitContactMe()">
-            <div class="row uniform collapse-at-2">
-                <div class="6u"><input type="text" name="name" id="name" placeholder="Name" formControlName="name"/></div>
-                <div class="6u"><input type="email" name="email" id="email" placeholder="Email" formControlName="email" /></div>
-            </div>
-            <div class="row uniform">
-                <div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" formControlName="subject"/></div>
-            </div>
-            <div class="row uniform">
-                <div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6" formControlName="message"></textarea></div>
-            </div>
-            <div class="row uniform">
-                <div class="12u">
-                    <ul class="actions">
-                        <li><input type="submit" class="special" value="Send Message" [disabled]="contactMeForm.invalid" /></li>
-                        <li><input type="reset" value="Reset Form" (click)="onFormReset()" /></li>
-                    </ul>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="mdl-card mdl-shadow--2dp">
+                    <h3 class="contact_info text-center">{{subtitle}}</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <p [innerHTML]="address"></p>
+                        </div>
+                        <div class="col-6">
+                            <p>
+                                <strong>Contact Information:</strong><br>
+                                <a href="tel:{{phone}}"><i class="fa fa-phone"></i>{{phone}}</a><br>
+                                <a href="mailto:{{email}}"><i class="fa fa-envelope"></i>{{email}}</a><br>
+                                <a href="https://github.com/{{github}}"><i class="fa fa-github"></i>{{github}}</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </form>
+        </div>
+        <div class="row mt-30">
+            <div class="col-sm-12">
+                <div class="mdl-card mdl-shadow--2dp">
+                    <h3 class="text-center">{{title}}</h3>
+                    <form (ngSubmit)="onSubmitContactMe()" [formGroup]="contactMeForm">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" formControlName="name" id="name" name="name"
+                                           type="text"/>
+                                    <label class="mdl-textfield__label" for="name">Name</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" formControlName="email" id="email" name="email"
+                                           type="email"/>
+                                    <label class="mdl-textfield__label" for="email">Email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input" formControlName="subject" id="subject" name="subject"
+                                           type="text"/>
+                                    <label class="mdl-textfield__label" for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <textarea class="mdl-textfield__input" formControlName="message" id="message" name="message"
+                                  rows="6"></textarea>
+                                    <label class="mdl-textfield__label" for="message">Message</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <button [disabled]="contactMeForm.invalid"
+                                        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                                        type="submit">
+                                    Send Message
+                                </button>
+                            </div>
+                            <div class="col-6 text-center">
+                                <button (click)="onFormReset()"
+                                        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                                        type="reset">
+                                    Reset Form
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+</app-header>

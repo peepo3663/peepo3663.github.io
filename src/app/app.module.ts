@@ -13,23 +13,45 @@ import { ContactComponent } from './contact/contact.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {ContactService} from "./contact.service";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
+import { SkillsetComponent } from './skillset/skillset.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+// For MDB Angular Free
+import {ChartsModule, IconsModule, NavbarModule, WavesModule} from 'angular-bootstrap-md';
+import { WhatIDoInADayComponent } from './what-i-do-in-a-day/what-i-do-in-a-day.component';
+import { WhatILoveComponent } from './what-i-love/what-i-love.component'
+import {AngularImageViewerModule} from "angular-x-image-viewer";
 
 @NgModule({
   declarations: [
-    AppComponent,
     HeaderComponent,
+    AppComponent,
     FooterComponent,
     AboutComponent,
     MainComponent,
     ThingCanDoComponent,
     AccomplishmentsComponent,
-    ContactComponent
+    ContactComponent,
+    ExperienceComponent,
+    EducationComponent,
+    SkillsetComponent,
+    AboutMeComponent,
+    WhatIDoInADayComponent,
+    WhatILoveComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    ChartsModule,
+    WavesModule,
+    NavbarModule,
+    IconsModule,
+    AngularImageViewerModule
   ],
   providers: [
       ContactService
