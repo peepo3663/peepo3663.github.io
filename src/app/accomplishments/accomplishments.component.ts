@@ -48,11 +48,11 @@ export class AccomplishmentsComponent implements OnInit {
             }, {
                 name: 'Ookbee Application (iOS)',
                 description: '',
-                imageURL: ''
+                imageURL: 'https://firebasestorage.googleapis.com/v0/b/wasupol-s-website.appspot.com/o/ookbee%2F1597793261181%20(1).jpeg?alt=media&token=b449b2f5-31f6-4e1c-b016-f4597932fca2'
             }, {
                 name: 'Ookbee Buffet Application (iOS)',
                 description: '',
-                imageURL: ''
+                imageURL: 'https://firebasestorage.googleapis.com/v0/b/wasupol-s-website.appspot.com/o/ookbee%2F1597793261181%20(1).jpeg?alt=media&token=b449b2f5-31f6-4e1c-b016-f4597932fca2'
             }, {
                 name: 'TEEZY (iOS Application)',
                 description: 'TEEZY application is the customized t-shirt design and make it real. It is developed with <b>iOS Swift</b> with <b>Shopify</b> sdk.<br /> Here is the <a href="http://www.ninefar.com/?p=20430">article</a> about the application.',
