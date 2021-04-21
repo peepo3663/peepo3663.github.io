@@ -1,5 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {CustomImageEvent} from "angular-x-image-viewer";
+import {ApiService} from "../api.service";
+import {Info} from "../models/Info";
 
 @Component({
   selector: 'app-about',
@@ -8,26 +10,18 @@ import {CustomImageEvent} from "angular-x-image-viewer";
 })
 export class AboutComponent implements OnInit {
 
-  title: string
-  subtitle: string
-  description: string
-  facebookLink: string = 'https://www.facebook.com/PiPo.Wasupol'
-  linkedin = 'https://www.linkedin.com/in/wasupol-tungsakultong-5b6b51a8'
-  instagram = 'https://www.instagram.com/peepo3663'
-  github = 'https://github.com/peepo3663'
-  age = 29
-  address = '262 Harvard St Apt 11, Cambridge, MA 02139'
-  email = 'peepo157@gmail.com'
-  phone = '+1 857 919 1438'
+  info: Info
 
   imageClick: string
 
-  constructor() {
+  constructor(private apiService: ApiService) {
   }
 
   ngOnInit(): void {
-    this.title = 'Wasupol Tungsakultong'
-    this.subtitle = 'Mobile Developer & Back End Developer & Front End Developer with 6 years of experience.'
+    this.apiService.getInfo().subscribe(next => {
+      this.info = next
+    }, error => {
+    })
   }
 
   onGalleryImageClick(image: string) {
