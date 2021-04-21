@@ -9,12 +9,12 @@
 <app-header *ngIf="imageClick == null">
     <div class="bg-struct bg-img"></div>
     <div class="container">
-        <app-about-me [title]="title" address="{{address}}" age="{{age}}"
-                      email="{{email}}" facebookLink="{{facebookLink}}" githubLink="{{github}}"
-                      instagramLink="{{instagram}}"
-                      linkedinLink="{{linkedin}}" phone="{{phone}}" subtitle="{{subtitle}}"></app-about-me>
-        <app-my-motto></app-my-motto>
+        <app-about-me [title]="info.title" address="{{info.address}}" age="{{info.age}}"
+                      email="{{info.email}}" facebookLink="{{info.facebookLink}}" githubLink="{{info.github}}"
+                      instagramLink="{{info.instagram}}"
+                      linkedinLink="{{info.linkedin}}" phone="{{info.phone}}" subtitle="{{info.subtitle}}"></app-about-me>
+        <app-my-motto [motto]="info.motto"></app-my-motto>
         <app-what-i-do-in-a-day></app-what-i-do-in-a-day>
-        <app-what-i-love (image)="onGalleryImageClick($event)"></app-what-i-love>
+        <app-what-i-love [poppyPupaeImages]="info.dogImages" (image)="onGalleryImageClick($event)"></app-what-i-love>
     </div>
 </app-header>

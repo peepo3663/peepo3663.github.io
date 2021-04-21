@@ -15,7 +15,6 @@ import {HttpClientModule} from "@angular/common/http";
 import {ContactService} from "./contact.service";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { ExperienceComponent } from './experience/experience.component';
-import { EducationComponent } from './education/education.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 // For MDB Angular Free
@@ -36,7 +35,6 @@ import { MyMottoComponent } from './my-motto/my-motto.component';
     AccomplishmentsComponent,
     ContactComponent,
     ExperienceComponent,
-    EducationComponent,
     SkillsetComponent,
     AboutMeComponent,
     WhatIDoInADayComponent,
