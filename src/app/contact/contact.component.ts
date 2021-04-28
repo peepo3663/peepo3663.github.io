@@ -16,6 +16,8 @@ export class ContactComponent implements OnInit {
     github = 'peepo3663'
     contactMeForm: FormGroup
 
+    error: any
+
     constructor(private contactService: ContactService) {
     }
 
@@ -48,7 +50,7 @@ export class ContactComponent implements OnInit {
           // show dialog successfully
           this.onFormReset()
       }, error => {
-          console.log({error})
+          this.error = error
       })
   }
 }

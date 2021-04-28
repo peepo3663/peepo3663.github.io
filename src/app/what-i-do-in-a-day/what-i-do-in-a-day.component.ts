@@ -31,7 +31,6 @@ export class WhatIDoInADayComponent implements OnInit {
       plugins: {
         datalabels: {
           formatter: (value, ctx) => {
-              console.log(`Plug in works with formatter`)
             let sum = 0;
             let dataArr = ctx.chart.data.datasets[0].data;
             dataArr.map(data => {
