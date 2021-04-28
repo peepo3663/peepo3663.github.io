@@ -1,5 +1,10 @@
 <app-header>
-    <div class="mdl-grid portfolio-max-width">
+    <div class="d-flex justify-content-center" *ngIf="loading">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="mdl-grid portfolio-max-width" *ngIf="accomplishments != null">
         <div *ngFor="let accomplishment of accomplishments" class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
             <div class="mdl-card__media">
                 <img alt="{{accomplishment.name}}" border="0" class="article-image" src="{{accomplishment.imageURL}}">

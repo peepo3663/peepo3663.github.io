@@ -13,6 +13,9 @@ export class AccomplishmentsComponent implements OnInit {
     subtitle = 'Here are my projects and accomplishments during my working experience.'
     accomplishments: Array<Project>
 
+    error: any
+    loading = false
+
     constructor(private apiService: ApiService) {
     }
 
@@ -22,9 +25,11 @@ export class AccomplishmentsComponent implements OnInit {
 
     private addProject() {
         this.apiService.getProjects().subscribe(next => {
+            this.loading = false
             this.accomplishments = next
         }, error => {
-
+            this.loading = false
+            this.error = error
         })
     }
 
