@@ -13,14 +13,20 @@ export class AboutComponent implements OnInit {
   info: Info
 
   imageClick: string
+  loading = false
+  error: any
 
   constructor(private apiService: ApiService) {
   }
 
   ngOnInit(): void {
+    this.loading = true
     this.apiService.getInfo().subscribe(next => {
+      this.loading = false
       this.info = next
     }, error => {
+      this.loading = false
+      this.error = error
     })
   }
 

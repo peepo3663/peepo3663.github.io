@@ -1,5 +1,10 @@
 <app-header>
-    <div class="container">
+    <div class="d-flex justify-content-center" *ngIf="loading">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="container" *ngIf="workingExperience != null">
         <section id="experience_sec" class="experience-sec sec-pad-top-sm">
                 <h2 class="mb-30">Working experience</h2>
                 <div class="timeline-wrap  overflow-hide mb-30">

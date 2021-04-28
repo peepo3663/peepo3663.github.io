@@ -11,11 +11,19 @@ export class ExperienceComponent implements OnInit {
 
   workingExperience: Array<Experience>
 
+  loading = false
+  error: any
+
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.loading = true
     this.apiService.getExperiences().subscribe(response => {
+      this.loading = false
       this.workingExperience = response
+    }, error =>  {
+      this.loading = false
+      this.error = error
     })
   }
 
